@@ -1,5 +1,7 @@
 package com.conversor.view;
 
+import com.conversor.controller.MonedaConversor;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -39,19 +41,11 @@ public class Interfaz{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String tab = Menu.getTitleAt(Menu.getSelectedIndex());
-                switch (tab){
-                    case "Moneda":
-                        calcularMoneda();
-                        break;
-                    case "Temperatura":
-                        calcularTemperatura();
-                        break;
-                    case "Longitud":
-                        calcularLongitud();
-                        break;
-                    case "Masa":
-                        calcularMasa();
-                        break;
+                switch (tab) {
+                    case "Moneda" -> calcularMoneda();
+                    case "Temperatura" -> calcularTemperatura();
+                    case "Longitud" -> calcularLongitud();
+                    case "Masa" -> calcularMasa();
                 }
             }
         });
@@ -76,7 +70,12 @@ public class Interfaz{
 
     private void calcularMoneda(){
         if (validarIngreso(txtIngresoMoneda)){
-            System.out.println("Seleccionado: " + deMoneda.getSelectedItem().toString() + " " + aMoneda.getSelectedItem().toString() + " " + txtIngresoMoneda.getText());
+            String monedaActual = deMoneda.getSelectedItem().toString().substring(0, 3);
+            String monedaCambio = aMoneda.getSelectedItem().toString().substring(0, 3);
+            double cantidad = Double.parseDouble(txtIngresoMoneda.getText());
+            System.out.println("Seleccionado: " + monedaActual + " " + monedaCambio + " " + cantidad);
+            MonedaConversor conversion = new MonedaConversor(monedaActual, monedaCambio, cantidad);
+            lblResultadoMoneda.setText("El resultado es : " + String.valueOf(conversion.cambioMoneda()));
         }
     }
 
