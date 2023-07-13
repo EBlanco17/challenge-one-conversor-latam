@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.conversor.view.Interfaz">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="105" y="37" width="491" height="460"/>
+    </constraints>
+    <properties>
+      <background color="-7941377"/>
+      <font name="JetBrains Mono" size="24" style="1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="9d8a8" binding="Menu">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="18" style="2"/>
+        </properties>
+        <border type="none">
+          <font name="JetBrains Mono" size="18"/>
+          <title-color color="-16777216"/>
+        </border>
+        <children>
+          <grid id="6e9e" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="2" bottom="2" right="2"/>
+            <constraints>
+              <tabbedpane title="Moneda"/>
+            </constraints>
+            <properties>
+              <background color="-12553412"/>
+            </properties>
+            <border type="none" title-justification="1">
+              <font name="JetBrains Mono"/>
+            </border>
+            <children>
+              <component id="c8c82" class="javax.swing.JTextField" binding="txtIngresoMoneda">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="16" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <hspacer id="df2a4">
+                <constraints>
+                  <grid row="5" column="0" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="84528">
+                <constraints>
+                  <grid row="5" column="2" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="9cb6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="A:"/>
+                </properties>
+              </component>
+              <component id="d374b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="Quiero Convertir:"/>
+                </properties>
+              </component>
+              <component id="29ade" class="javax.swing.JLabel" binding="lblResultadoMoneda">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8120801"/>
+                  <font name="JetBrains Mono" size="26" style="1"/>
+                  <foreground color="-8120801"/>
+                  <text value="El resultado es :"/>
+                </properties>
+              </component>
+              <component id="98427" class="javax.swing.JComboBox" binding="deMoneda">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="COP (PESO COLOMBIANO)"/>
+                    <item value="USD (DOLAR EE.UU)"/>
+                    <item value="EUR (EURO)"/>
+                    <item value="GBP (LIBRA ESTERLINA)"/>
+                    <item value="JPY (YEN JAPONES)"/>
+                    <item value="KRW (WON SUR COREANO)"/>
+                    <item value="MXN (PESO MEXICANO)"/>
+                    <item value="CAD (DOLAR CANADIENSE)"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="d898b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <labelFor value="98427"/>
+                  <text value="De:"/>
+                </properties>
+              </component>
+              <component id="1313" class="javax.swing.JComboBox" binding="aMoneda">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="COP (PESO COLOMBIANO)"/>
+                    <item value="USD (DOLAR EE.UU)"/>
+                    <item value="EUR (EURO)"/>
+                    <item value="GBP (LIBRA ESTERLINA)"/>
+                    <item value="JPY (YEN JAPONES)"/>
+                    <item value="KRW (WON SUR COREANO)"/>
+                    <item value="MXN (PESO MEXICANO)"/>
+                    <item value="CAD (DOLAR CANADIENSE)"/>
+                  </model>
+                  <selectedIndex value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="59020" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="2" bottom="2" right="2"/>
+            <constraints>
+              <tabbedpane title="Temperatura"/>
+            </constraints>
+            <properties>
+              <background color="-9226447"/>
+            </properties>
+            <border type="none" title-justification="1">
+              <font name="JetBrains Mono"/>
+            </border>
+            <children>
+              <component id="2b6b9" class="javax.swing.JTextField" binding="txtIngresoTemperatura">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="16" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <hspacer id="b6707">
+                <constraints>
+                  <grid row="5" column="0" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="f488e">
+                <constraints>
+                  <grid row="5" column="2" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="1af26" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="A:"/>
+                </properties>
+              </component>
+              <component id="25f1c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="Quiero Convertir:"/>
+                </properties>
+              </component>
+              <component id="6da30" class="javax.swing.JLabel" binding="lblResultadoTemperatura">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8120801"/>
+                  <font name="JetBrains Mono" size="26" style="1"/>
+                  <foreground color="-15563767"/>
+                  <text value="El resultado es :"/>
+                </properties>
+              </component>
+              <component id="bb377" class="javax.swing.JComboBox" binding="deTemperatura">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="Kelvin (K)"/>
+                    <item value="Celsius (C)"/>
+                    <item value="Fahrenheit (F)"/>
+                    <item value="Reaumur (R)"/>
+                    <item value="Rankine"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="6abcf" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="De:"/>
+                </properties>
+              </component>
+              <component id="ed140" class="javax.swing.JComboBox" binding="aTemperatura">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="Kelvin (K)"/>
+                    <item value="Celsius (C)"/>
+                    <item value="Fahrenheit (F)"/>
+                    <item value="Reaumur (R)"/>
+                    <item value="Rankine"/>
+                  </model>
+                  <selectedIndex value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="76a1c" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="2" bottom="2" right="2"/>
+            <constraints>
+              <tabbedpane title="Longitud"/>
+            </constraints>
+            <properties>
+              <background color="-12821645"/>
+            </properties>
+            <border type="none" title-justification="1">
+              <font name="JetBrains Mono"/>
+            </border>
+            <children>
+              <component id="b272c" class="javax.swing.JTextField" binding="txtIngresoLongitud">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="16" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <hspacer id="6fa3c">
+                <constraints>
+                  <grid row="5" column="0" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="27680">
+                <constraints>
+                  <grid row="5" column="2" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="48732" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="A:"/>
+                </properties>
+              </component>
+              <component id="af400" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="Quiero Convertir:"/>
+                </properties>
+              </component>
+              <component id="c829c" class="javax.swing.JLabel" binding="lblResultadoLongitud">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8120801"/>
+                  <font name="JetBrains Mono" size="26" style="1"/>
+                  <foreground color="-15563767"/>
+                  <text value="El resultado es :"/>
+                </properties>
+              </component>
+              <component id="9fac8" class="javax.swing.JComboBox" binding="deLongitud">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="Kilometro (km)"/>
+                    <item value="Metro (m)"/>
+                    <item value="Centimetro (cm)"/>
+                    <item value="Milimetro (mm)"/>
+                    <item value="Milla (mi)"/>
+                    <item value="Yarda (yd)"/>
+                    <item value="Pie (ft)"/>
+                    <item value="Pulgada (in)"/>
+                    <item value="Milla Náutica"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="43194" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="De:"/>
+                </properties>
+              </component>
+              <component id="268a1" class="javax.swing.JComboBox" binding="aLongitud">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="Kilometro (km)"/>
+                    <item value="Metro (m)"/>
+                    <item value="Centimetro (cm)"/>
+                    <item value="Milimetro (mm)"/>
+                    <item value="Milla (mi)"/>
+                    <item value="Yarda (yd)"/>
+                    <item value="Pie (ft)"/>
+                    <item value="Pulgada (in)"/>
+                    <item value="Milla Náutica"/>
+                  </model>
+                  <selectedIndex value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ea80d" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="2" bottom="2" right="2"/>
+            <constraints>
+              <tabbedpane title="Masa"/>
+            </constraints>
+            <properties>
+              <background color="-9211609"/>
+            </properties>
+            <border type="none" title-justification="1">
+              <font name="JetBrains Mono"/>
+            </border>
+            <children>
+              <component id="b0dd9" class="javax.swing.JTextField" binding="txtIngresoMasa">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="16" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <hspacer id="b960d">
+                <constraints>
+                  <grid row="5" column="0" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="6e5df">
+                <constraints>
+                  <grid row="5" column="2" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="d201b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="A:"/>
+                </properties>
+              </component>
+              <component id="88a2c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="Quiero Convertir:"/>
+                </properties>
+              </component>
+              <component id="8c4cc" class="javax.swing.JLabel" binding="lblResultadoMasa">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8120801"/>
+                  <font name="JetBrains Mono" size="26" style="1"/>
+                  <foreground color="-8120801"/>
+                  <text value="El resultado es :"/>
+                </properties>
+              </component>
+              <component id="4fd40" class="javax.swing.JComboBox" binding="deMasa">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="Gramo (g)"/>
+                    <item value="Decagramo (dag)"/>
+                    <item value="Hectogramo (hg)"/>
+                    <item value="Kilogramo (kg)"/>
+                    <item value="Tonelada métrica (t)"/>
+                    <item value="Onza (Oz)"/>
+                    <item value="Libra (lb)"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="d3fa" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font name="JetBrains Mono" size="18" style="1"/>
+                  <foreground color="-4725799"/>
+                  <text value="De:"/>
+                </properties>
+              </component>
+              <component id="93eee" class="javax.swing.JComboBox" binding="aMasa">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7821154"/>
+                  <font size="16"/>
+                  <foreground color="-16777216"/>
+                  <model>
+                    <item value="Gramo (g)"/>
+                    <item value="Decagramo (dag)"/>
+                    <item value="Hectogramo (hg)"/>
+                    <item value="Kilogramo (kg)"/>
+                    <item value="Tonelada métrica (t)"/>
+                    <item value="Onza (Oz)"/>
+                    <item value="Libra (lb)"/>
+                  </model>
+                  <selectedIndex value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="6a476" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Imprint MT Shadow" size="28" style="1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="CONVERSOR"/>
+          <verticalAlignment value="0"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="b765a" class="javax.swing.JButton" binding="btnConvertir">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6382554"/>
+          <font name="JetBrains Mono" size="24"/>
+          <text value="Convertir"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
