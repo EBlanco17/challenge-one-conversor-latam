@@ -1,6 +1,6 @@
 package com.conversor.view;
 
-import com.conversor.controller.MonedaConversor;
+import com.conversor.controller.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -73,28 +73,63 @@ public class Interfaz{
             String monedaActual = deMoneda.getSelectedItem().toString().substring(0, 3);
             String monedaCambio = aMoneda.getSelectedItem().toString().substring(0, 3);
             double cantidad = Double.parseDouble(txtIngresoMoneda.getText());
-            System.out.println("Seleccionado: " + monedaActual + " " + monedaCambio + " " + cantidad);
-            MonedaConversor conversion = new MonedaConversor(monedaActual, monedaCambio, cantidad);
-            lblResultadoMoneda.setText("El resultado es : " + String.valueOf(conversion.cambioMoneda()));
+
+            Moneda conversion = new Moneda();
+            conversion.setUnidadActual(monedaActual);
+            conversion.setUnidadCambio(monedaCambio);
+            conversion.setCantidad(cantidad);
+            lblResultadoMoneda.setText("El resultado es : " + String.valueOf(conversion.convertir()));
         }
     }
 
     private void calcularTemperatura(){
         if (validarIngreso(txtIngresoTemperatura)){
-            System.out.println("Seleccionado: " + deTemperatura.getSelectedItem().toString() + " " + aTemperatura.getSelectedItem().toString() + " " + txtIngresoTemperatura.getText());
+            String temperaturaActual = sustraerTexto(deTemperatura.getSelectedItem().toString());
+            String temperaturaCambio = sustraerTexto(aTemperatura.getSelectedItem().toString());
+            double cantidad = Double.parseDouble(txtIngresoTemperatura.getText());
+
+            Temperatura conversion = new Temperatura();
+            conversion.setUnidadActual(temperaturaActual);
+            conversion.setUnidadCambio(temperaturaCambio);
+            conversion.setCantidad(cantidad);
+            lblResultadoTemperatura.setText("El resultado es : " + String.valueOf(conversion.convertir()));
+
         }
     }
 
     private void calcularLongitud(){
         if (validarIngreso(txtIngresoLongitud)){
-            System.out.println("Seleccionado: " + deLongitud.getSelectedItem().toString() + " " + aLongitud.getSelectedItem().toString() + " " + txtIngresoLongitud.getText());
+            String longitudActual = sustraerTexto(deLongitud.getSelectedItem().toString());
+            String longitudCambio = sustraerTexto(aLongitud.getSelectedItem().toString());
+            double cantidad = Double.parseDouble(txtIngresoLongitud.getText());
+
+            Longitud conversion = new Longitud();
+            conversion.setUnidadActual(longitudActual);
+            conversion.setUnidadCambio(longitudCambio);
+            conversion.setCantidad(cantidad);
+            lblResultadoLongitud.setText("El resultado es : " + String.valueOf(conversion.convertir()));
+
         }
     }
 
     private void calcularMasa(){
         if (validarIngreso(txtIngresoMasa)){
-            System.out.println("Seleccionado: " + deMasa.getSelectedItem().toString() + " " + aMasa.getSelectedItem().toString() + " " + txtIngresoMasa.getText());
+            String masaActual = sustraerTexto(deMasa.getSelectedItem().toString());
+            String masaCambio = sustraerTexto(aMasa.getSelectedItem().toString());
+            double cantidad = Double.parseDouble(txtIngresoMasa.getText());
+
+            Masa conversion = new Masa();
+            conversion.setUnidadActual(masaActual);
+            conversion.setUnidadCambio(masaCambio);
+            conversion.setCantidad(cantidad);
+            lblResultadoMasa.setText("El resultado es : " + String.valueOf(conversion.convertir()));
         }
+    }
+
+    private String sustraerTexto(String texto){
+        int indice1 = texto.indexOf("(") + 1;
+        int indice2 = texto.indexOf(")");
+        return texto.substring(indice1, indice2);
     }
 
     public static void main(String[] args) {

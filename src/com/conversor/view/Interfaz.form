@@ -226,8 +226,6 @@
                     <item value="Kelvin (K)"/>
                     <item value="Celsius (C)"/>
                     <item value="Fahrenheit (F)"/>
-                    <item value="Reaumur (R)"/>
-                    <item value="Rankine"/>
                   </model>
                 </properties>
               </component>
@@ -254,8 +252,6 @@
                     <item value="Kelvin (K)"/>
                     <item value="Celsius (C)"/>
                     <item value="Fahrenheit (F)"/>
-                    <item value="Reaumur (R)"/>
-                    <item value="Rankine"/>
                   </model>
                   <selectedIndex value="1"/>
                 </properties>
@@ -346,7 +342,7 @@
                     <item value="Yarda (yd)"/>
                     <item value="Pie (ft)"/>
                     <item value="Pulgada (in)"/>
-                    <item value="Milla Náutica"/>
+                    <item value="Milla Náutica (nmi)"/>
                   </model>
                 </properties>
               </component>
@@ -378,7 +374,7 @@
                     <item value="Yarda (yd)"/>
                     <item value="Pie (ft)"/>
                     <item value="Pulgada (in)"/>
-                    <item value="Milla Náutica"/>
+                    <item value="Milla Náutica (nmi)"/>
                   </model>
                   <selectedIndex value="1"/>
                 </properties>
