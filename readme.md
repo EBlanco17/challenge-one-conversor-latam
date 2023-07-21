@@ -10,11 +10,20 @@ Solución a reto propuesto conversor de divisas utilizando el lenguaje Java.
 - Conversor de Longitud ️📏
 - Conversor de Masa ⚖️
 
-## 🖥️Tecnologias
+## 🖥️Tecnologias y herramientas utilizadas
 
 - [Exchangerate API](https://app.exchangerate-api.com) - API gratuita con 🌍 Tasas de conversión para 161 monedas.
 - [Java](https://www.oracle.com/java/technologies/java-se-glance.html) - JDK 17, Java Development Kit es un software que provee herramientas de desarrollo para la creación de programas en Java.
 - [Java Swing](https://docs.oracle.com/javase/tutorial/uiswing/start/index.html) - Swing es una biblioteca gráfica para Java. Incluye widgets para interfaz gráfica de usuario tales como cajas de texto, botones, listas desplegables y tablas.
+- [IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/) - IDE para el desarrollo de aplicaciones en Java.
+## 📥Instalación
+1. Clonar el repositorio
+```
+git clone
+```
+2. Abrir el proyecto desde el explorador de archivos
+3. Buscar la ruta del .jar  _`Conversor.jar`_ en la carpeta
+4. Ejecutar el archivo .jar
 
 ## 💽Uso
 1. Seleccionar conversor
